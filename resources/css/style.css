@@ -9,14 +9,54 @@ p {
 }
 
 /* Header */
+header {
+  height: 4rem;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+nav {
+  
+}
+
+a.desktop.logo {
+  
+}
+
+header nav ul {
+  display: flex;
+  margin-right: 1.5rem;
+  
+}
+
+header nav ul li {
+  margin: 0 0.5rem;
+}
+
+header .mobile {
+  display: none;
+}
+
+
+@media only screen and (max-width: 425px) {
+  header .mobile {
+    display: block;
+  }
+
+  header .desktop {
+    display: none;
+  }
+}
 
 
 /* Sign up Section */
 
 /* Actualities Section */
 
-/* Study Field Section */
+/* Study Fields Section */
 
 /* Thesis Exhibit Section */
 
