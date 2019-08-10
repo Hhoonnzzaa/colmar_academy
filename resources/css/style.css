@@ -4,53 +4,78 @@ html {
   font-size: 16px;
 }
 
-p {
-  display: inline-block;
+.bold {
+  font-weight: bold;
 }
 
 /* Header */
 header {
-  height: 4rem;
-  position: fixed;
-  width: 100%;
   display: flex;
   justify-content: space-between;
+  height: 4rem;
+  align-items: center;
+  padding: 0 1.5rem;
+  font-size: 2rem;
+  background-color: lightgrey;
+}
+
+.logo a {
+  display: flex;
   align-items: center;
 }
 
-nav {
-  
+.logo-img {
+  height: 3rem;
 }
 
-a.desktop.logo {
-  
-}
-
-header nav ul {
+nav ul {
   display: flex;
-  margin-right: 1.5rem;
-  
+  font-size: 1.5rem;
 }
 
-header nav ul li {
-  margin: 0 0.5rem;
+nav ul li {
+  margin-left: 1rem;
 }
 
-header .mobile {
+.mobile-navbar {
   display: none;
 }
 
 
 @media only screen and (max-width: 425px) {
-  header .mobile {
+  .mobile-header {
     display: block;
   }
+  
+  .mobile-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+  }
 
-  header .desktop {
+  .mobile-navbar a img {
+    height: 2.5rem;
+  }
+
+  .desktop-navbar {
     display: none;
   }
 }
 
+@media only screen and (max-width: 768px) {
+  header {
+    font-size: 1.5rem;
+  }
+
+  .logo-img {
+    height: 2.5rem;
+  }
+  
+  nav ul {
+    font-size: 1rem;
+  }
+}
 
 /* Sign up Section */
 
