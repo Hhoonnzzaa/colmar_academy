@@ -1,64 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Colmar Academy</title>
+    <link rel="stylesheet" href="resources/css/reset.css" />
+    <link rel="stylesheet" href="resources/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Colmar Academy</title>
-  <link rel="stylesheet" href="resources/css/reset.css" />
-  <link rel="stylesheet" href="resources/css/style.css" />
-</head>
+  <body>
+    <!-- Header -->
+    <header class="mobile-header">
+      <div class="logo desktop-navbar">
+        <a href="index.html">
+          <img src="resources/images/ic-logo.svg" alt="logo" class="logo-img" />
+          <div class="logo-text desktop">
+            <span class="bold">COLMAR</span>ACADEMY
+          </div>
+        </a>
+      </div>
 
-<body>
-  <!-- Header -->
-  <header class='mobile-header'>
-    <div class="logo desktop-navbar">
-      <a href="index.html">
-        <img src="resources/images/ic-logo.svg" alt="logo" class="logo-img">
-        <div class="logo-text desktop">
-          <span class="bold">COLMAR</span>ACADEMY
+      <div class="desktop-navbar">
+        <nav>
+          <ul>
+            <li><a href="#">On campus</a></li>
+            <li><a href="#">Online</a></li>
+            <li><a href="#">For companies</a></li>
+            <li><a href="#">Sign in</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="mobile-navbar">
+        <a href="#"><img src="resources/images/ic-logo.svg"/></a>
+        <a href="#"><img src="resources/images/ic-on-campus.svg"/></a>
+        <a href="#"><img src="resources/images/ic-online.svg"/></a>
+        <a href="#"><img src="resources/images/ic-login.svg"/></a>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Sign up Section -->
+      <div id="sign-up-section">
+        <div class="banner">
+          <img
+            src="resources/images/banner.jpg"
+            alt="three girls at the table"
+          />
         </div>
-      </a>
-    </div>
 
-    <div class="desktop-navbar">
-      <nav>
-        <ul>
-          <li><a href="#">On campus</a></li>
-          <li><a href="#">Online</a></li>
-          <li><a href="#">For companies</a></li>
-          <li><a href="#">Sign in</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class='mobile-navbar'>
-      <a href="#"><img src="resources/images/ic-logo.svg"></a>
-      <a href="#"><img src="resources/images/ic-on-campus.svg"></a>
-      <a href="#"><img src="resources/images/ic-online.svg"></a>
-      <a href="#"><img src="resources/images/ic-login.svg"></a>
-    </div>
-
-
-
-  </header>
-
-  <!-- Main Content -->
-  <div class="main-content">
-
-    <!-- Sign up Section -->
-    <div id="sign-up-section">
-      <img src="resources/images/banner.jpg" alt="three girls at the table">
-
-      <div class='text-container'>
-        <h1 class='bold'>Learn something new everyday</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <div><a>Start here</a></div>
+        <div class="text-container">
+          <h1 class="bold">Learn something new everyday</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div><a>Start here</a></div>
+        </div>
       </div>
 
       <!-- Actualities Section -->
-      <div id="actualities-section"></div>
+      <div id="actualities-section">
+        <div class="big-container">
+          <img
+            src="resources/images/information-main.jpg"
+            alt="man with a cellphone"
+          />
+          <div class="text-container">
+            <h1 class="bold">It doesn't hurt to keep practicing</h1>
+            <p class="lorem-ipsum">
+              Nulla non arcu lacinia neque faucibus fringilla. Mauris metus.
+              Phasellus et lorem id felis nonummy placerat. Aliquam in lorem sit
+              amet leo accumsan lacinia. Pellentesque sapien. Duis condimentum
+              augue id magna semper rutrum. Quisque tincidunt scelerisque
+              libero. Aenean id metus id velit ullamcorper pulvinar.
+            </p>
+            <p>Emanuel, Sr Strategist at Hiring.com</p>
+          </div>
+        </div>
+
+        <div class="small-containers">
+          <div class="date small-container">
+            <div class="image">
+              <img
+                src="resources/images/information-orientation.jpg"
+                alt="overhead-view of people walking on a cbblestone pavement"
+              />
+            </div>
+            <div class="text-container">
+              <h1 class="bold">Orientation date</h1>
+              <p>Tue 10/11 & Wed 10/12: 8am - 3pm</p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="campus small-container">
+            <div class="image">
+              <img
+                src="resources/images/information-campus.jpg"
+                alt="restaurant"
+              />
+            </div>
+            <div class="text-container">
+              <h1 class="bold">Our campus</h1>
+              <p>Find which campus is close by you</p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="lecture small-container">
+            <div class="image">
+              <img
+                src="resources/images/information-guest-lecture.jpg"
+                alt="man"
+              />
+            </div>
+            <div class="text-container">
+              <h1 class="bold">Our guest lecture</h1>
+              <p>
+                Join a keynote with Oliver Sack about music and medical
+                treatment
+              </p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="containers-mobile">
+          <div class="container date">
+            <div class="image">
+              <img
+                src="./resources/images/information-orientation-mobile.jpg"
+                alt="overhead-view of people walking on the cobblestone pavement"
+              />
+            </div>
+            <div class="text-container">
+              <h1 class="bold">Orientation date</h1>
+              <p>Tue 10/11 & Wed 10/12: 8am - 3pm</p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="container campus">
+            <div class="image">
+              <img
+                src="./resources/images/information-campus-mobile.jpg"
+                alt="restaurant"
+              />
+            </div>
+            <div class="text-container">
+              <h1 class="bold">Our campus</h1>
+              <p>Find which campus is close by you</p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="container lecture">
+            <div class="image">
+              <img
+                src="./resources/images/information-guest-lecture-mobile.jpg"
+                alt="man"
+              />
+            </div>
+            <div class="text-container">
+              <h1 class="bold">Our guest lecture</h1>
+              <p>
+                Join a keynote with Oliver Sack about music and medical
+                treatment
+              </p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- Study Fields Section -->
       <div id="study-fields-section"></div>
@@ -69,6 +178,5 @@
 
     <!-- footer -->
     <footer></footer>
-</body>
-
+  </body>
 </html>

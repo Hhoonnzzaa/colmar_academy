@@ -1,4 +1,7 @@
 /* Universal Styles */
+* {
+  box-sizing: border-box;
+}
 
 html {
   font-size: 16px;
@@ -41,12 +44,11 @@ nav ul li {
   display: none;
 }
 
-
 @media only screen and (max-width: 550px) {
   .mobile-header {
     display: block;
   }
-  
+
   .mobile-navbar {
     display: flex;
     justify-content: space-between;
@@ -71,7 +73,7 @@ nav ul li {
   .logo-img {
     height: 2.5rem;
   }
-  
+
   nav ul {
     font-size: 1rem;
   }
@@ -83,19 +85,23 @@ nav ul li {
   display: flex;
 }
 
-#sign-up-section img{
-  width: 60%;
-  margin: 2rem 1.5rem;
-  height: auto;
-} 
-
 /* the wireframe design is not accurate so in the text-contatiner you have to improvise */
+
+#sign-up-section .banner {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+#sign-up-section .banner img {
+  width: 100%;
+}
 
 #sign-up-section .text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 30%;
+  width: 40%;
+  padding-right: 4rem;
 }
 
 #sign-up-section .text-container h1 {
@@ -118,26 +124,135 @@ nav ul li {
   font-size: 1.25rem;
 }
 
-@media only screen and (max-width: 851px) {
+@media only screen and (max-width: 752px) {
   #sign-up-section {
     display: block;
   }
-  
-  #sign-up-section img {
+
+  #sign-up-section .banner {
     width: 100%;
-    margin: 0;
+    padding: 0;
   }
 
   #sign-up-section .text-container {
     width: auto;
     padding: 2rem 1rem;
   }
-
-
 }
 
-
 /* Actualities Section */
+#actualities-section .containers-mobile {
+  display: none;
+}
+
+#actualities-section {
+  display: flex;
+  justify-content: ;
+}
+
+/* big container */
+
+#actualities-section .big-container {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+#actualities-section .big-container img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+#actualities-section .big-container .text-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#actualities-section .big-container .text-container .lorem-ipsum {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#actualities-section .big-container .text-container p {
+  font-size: 1.25rem;
+}
+
+/* small containers */
+
+#actualities-section .small-containers {
+  width: 40%;
+  padding-top: 1rem;
+}
+
+#actualities-section .small-containers .small-container {
+  display: flex;
+  padding: 1rem;
+}
+
+#actualities-section .small-containers .text-container {
+  width: 65%;
+  padding-left: 1.5rem;
+  margin: auto 0;
+}
+
+#actualities-section .small-containers .image {
+  width: 35%;
+}
+
+#actualities-section .small-containers .image img {
+  width: 100%;
+  height: auto;
+}
+
+#actualities-section .small-containers h1,
+#actualities-section .containers-mobile h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+#actualities-section .small-containers p,
+#actualities-section .containers-mobile p {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+#actualities-section .small-containers a,
+#actualities-section .containers-mobile a {
+  font-size: 1.25rem;
+  color: blue;
+}
+
+.date,
+.lecture {
+  background-color: gray;
+}
+
+@media only screen and (max-width: 752px) {
+  #actualities-section .containers-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  #actualities-section .big-container {
+    display: none;
+  }
+
+  #actualities-section .small-containers {
+    display: none;
+  }
+
+  #actualities-section .containers-mobile img {
+    width: 100%;
+  }
+
+  #actualities-section .containers-mobile .container {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  #actualities-section .containers-mobile .text-container {
+    padding: 0 1rem;
+    margin-top: 2rem;
+  }
+}
 
 /* Study Fields Section */
 
