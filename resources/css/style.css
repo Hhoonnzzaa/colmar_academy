@@ -297,7 +297,7 @@ nav ul li {
 }
 
 @media only screen and (max-width: 752px) {
-  .mobile {
+  #fields-boxes .mobile {
     display: none;
   }
 
@@ -313,4 +313,122 @@ nav ul li {
   #fields-boxes .box {
     margin-bottom: 0.5rem;
   }
-} /* Thesis Exhibit Section */ /* Footer */
+}
+
+/* Thesis Exhibit Section */
+#thesis-exhibit-section {
+  padding: 2rem 0;
+}
+
+#thesis-exhibit-section .content {
+  display: flex;
+}
+
+#thesis-exhibit-section h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#thesis-exhibit-section .left-box {
+  width: 60%;
+  padding: 2rem 1.5rem 0 1.5rem;
+  display: inline-block;
+}
+
+#thesis-exhibit-section .video-box {
+  width: 100%;
+}
+
+#thesis-exhibit-section .video-box video {
+  width: 100%;
+}
+
+#thesis-exhibit-section .left-box .text-container h2 {
+  margin: 1.5rem 0 0.5rem 0;
+  font-size: 2.5rem;
+}
+
+#thesis-exhibit-section .left-box .text-container p {
+  font-size: 1.5rem;
+}
+
+#thesis-exhibit-section .right-boxes {
+  display: inline-block;
+  width: 40%;
+  margin-top: 1rem;
+}
+
+#thesis-exhibit-section .right-boxes .box {
+  display: flex;
+}
+
+#thesis-exhibit-section .right-boxes .box .image {
+  width: 35%;
+  margin: 1rem;
+}
+
+#thesis-exhibit-section .right-boxes .color {
+  background-color: lightgray;
+}
+
+#thesis-exhibit-section .right-boxes .box img {
+  width: 100%;
+  height: auto;
+}
+
+#thesis-exhibit-section .right-boxes .text-container {
+  width: 65%;
+  margin: auto 0;
+}
+
+#thesis-exhibit-section .right-boxes .text-container h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#thesis-exhibit-section .right-boxes .text-container p {
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 752px) {
+  #thesis-exhibit-section .mobile {
+    display: none;
+  }
+
+  #thesis-exhibit-section {
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  #thesis-exhibit-section .left-box {
+    width: 100%;
+    padding: 1rem 0 0 0;
+  }
+}
+
+/* Footer */
+
+footer {
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 752px) {
+  footer {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  footer .right {
+    display: none;
+  }
+}
